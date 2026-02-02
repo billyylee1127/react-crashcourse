@@ -5,9 +5,9 @@ function Todo({ title, paragraph }) {
     return (
     <div className="todo">
         <h2>{title}</h2>
-        <p>{pargraph}</p>
-        <button onClick={() => {
-            console.log=`clicked`
+        <p>{paragraph}</p>
+        <button onClick-={() => {
+            console.log(`clicked`)
         }}>Delete</button>
     </div>
     );

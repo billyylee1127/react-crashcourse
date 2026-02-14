@@ -15,16 +15,14 @@ function Home() {
   }
 
   useEffect(() => {
-    setTimeout(() => {
       fetchUsers();
-    }, 500);
   }, []);
   const pixels = "3px";
 
   return (
     <div>
       {users.map((user) => (
-        <Link to={`/${user.id}`} key={user.id}>
+        <Link to={`/users/${user.id}`} key={user.id}>
           <User            
             id={user.id}
             name={user.name}

@@ -15,7 +15,7 @@ function Home() {
   }
 
   useEffect(() => {
-      fetchUsers();
+      fetchUsers(); 
   }, []);
   const pixels = "3px";
 
@@ -26,7 +26,7 @@ function Home() {
           <User            
             id={user.id}
             name={user.name}
-            email={user.emai}
+            email={user.email}
             username={user.username}
           />
         </Link>
